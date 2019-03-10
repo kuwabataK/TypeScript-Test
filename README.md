@@ -4,25 +4,38 @@
 
 ## 使い方
 
-* TypeScriptのインストール
+TypeScriptをインストール
 
 ```
 $ npm install -g typescript
 ```
 
-* configファイルの作成
+configファイルを作成
 
 ```
 $ tsc --init 
 ```
 
-* jsファイルへのコンパイル
+configファイルに、`files`を追記
 
 ```
-$ tsc test.ts
+{
+  "compilerOptions": {
+   ...
+  },
+  "files": [
+    "test.ts"
+  ]
+}
 ```
 
-* jsファイルの実行
+jsファイルへのコンパイル
+
+```
+$ tsc -p tsconfig.json
+```
+
+jsファイルの実行
 
 ```
 $ node test.js
