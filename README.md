@@ -16,7 +16,7 @@ configファイルを作成
 $ tsc --init 
 ```
 
-configファイルに、`files`を追記
+`tsconfig.json`ファイルに、`files`を追記
 
 ```
 {
