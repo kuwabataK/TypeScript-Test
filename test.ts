@@ -116,6 +116,14 @@ const mixin: チーム1 & イデアル = {
 }
 
 
+// スプレッド演算子を使って既存のインスタンスの合成をすることもできるよ
+ const ide = new イデアル()
+ const team1_ = new チーム1()
+ const mixin2: チーム1 & イデアル = {
+    ...ide,
+    ...team1_
+ }
+
 // User型のインスタンスを作成
 const user: User = {
     name: "kuwabara",
